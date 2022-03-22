@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/cb7b66fe1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Scripta per thirrjen e klasave te ikonave-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <title>SportsBlog | Home</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1>
+            <span
+              ><a href="Index.html"
+                >SportsBlog<img
+                  src="./images/sport-icon2.svg"
+                  width="40px"
+                  height="40px"
+                  alt="Soccer Ball" /></a
+            ></span>
+          </h1>
+
+          <div class="nav-links" id="navLinks">
+            <a
+              ><img
+                src="./images/x-icon.ico"
+                alt=""
+                class="x-icon"
+                onclick="hideMenu()"
+              />
+            </a>
+
+            <ul>
+              <li><a href="Index.html" class="orange">Home</a></li>
+              <li><a href="Articles.html">News</a></li>
+              <li><a href="Services.html">Sign up</a></li>
+            </ul>
+          </div>
+          <a
+            ><img
+              src="./images/menu-icon.png"
+              alt=""
+              class="menu-icon"
+              onclick="showMenu()"
+          /></a>
+        </nav>
+        <div class="text-box">
+          <h1>Sports Blog</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+            reiciendis.<br />Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Molestias, expedita!
+          </p>
+          <a href="Services.html" class="banner-btn">Contact us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="popular-news">
+        <h1>Latest soccer news</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          deleniti assumenda ut libero amet commodi hic modi est, explicabo
+          magnam blanditiis, et distinctio ipsum illum veniam natus deserunt
+          delectus mollitia!
+        </p>
+
+        <div class="row">
+          <div class="news-col">
+              <img src="./images/ArtickleP1.jpg" alt="Li.Messi" />
+              <h3>Lionel Messi</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+              </p>
+              <a href="Articles.html#post1" class="banner-btn2">Read more</a>
+          </div>
+          <div class="news-col">
+              <img src="./images/ArtickleP2.jpg" alt="Cr.Ronaldo" />
+              <h3>Cristiano Ronaldo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+              </p>
+              <a href="Articles.html#post2" class="banner-btn2">Read more</a>
+          </div>
+          <div class="news-col">
+              <img src="./images/ArtickleP3.jpg" alt="Ke.De Bryne" />
+              <h3>Kevin De Bruyne</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+              </p>
+              <a href="Articles.html#post3" class="banner-btn2">Read more</a>
+          </div>
+        </div>
+      </section>
+      <section class="popular-news">
+        <h1>Latest basketball news</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+        </p>
+
+        <div class="row">
+          <div class="news-col2">
+              <img src="./images/2Artickle1.jpg" alt="" />
+              <h3>Phoenix Suns</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+              </p>
+              
+              <a href="Articles.html#post4" class="banner-btn2">Read more</a>
+          </div>
+          <div class="news-col2">
+            
+              <img src="./images/2Artickle2.jpg" alt="" />
+              <h3>La Lakers</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veniam, ipsam odio ex ratione cumque pariatur perferendis maiores adipisci corrupti.
+              </p>
+              
+              <a href="Articles.html#post5" class="banner-btn2">Read more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4 class="orange">About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+        sapiente.
+        <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, laborum.
+      </p>
+      <p id="footerTxt">All rights reserved &copy; 2021</p>
+      <div class="icons">
+        <a href=""> <i class="fab fa-facebook-square"></i></a>
+        <a href=""> <i class="fa fa-twitter"></i> </a>
+        <a href=""> <i class="fab fa-instagram"></i></a>
+        <a href=""> <i class="fab fa-discord"></i></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript per responsive menu -->
+    <script src="./script.js"></script>
+  </body>
+</html>

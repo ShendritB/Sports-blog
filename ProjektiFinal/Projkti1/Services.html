@@ -1,0 +1,276 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://kit.fontawesome.com/cb7b66fe1c.js" crossorigin="anonymous"></script>
+    <!--Scripta per thirrjen e klasave te ikonave-->
+
+     <!-- Fontet e marrura nga google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <title>SportsBlog | Sign Up</title>
+    <style>
+       
+        header {
+            box-sizing: none;
+            background-image: none;
+            min-height: 50px;
+            border-bottom: 2px solid #100f20;
+        }
+        footer{
+           margin-top: 0;
+        }
+        .fab, .fa{
+        margin:0;
+        padding:0;
+        color:#f44336;
+        
+        }
+        .fab:hover, .fa:hover{
+            color:#ff2600;
+        }
+        main{
+            box-sizing: border-box;  
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding:50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.884),rgba(0, 10, 46, 0.815)), url(./images/shPageContactUsBg.jpg);
+            background-size: cover;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h2{
+           font-size: 36px;
+           margin-bottom: 10px;
+           font-weight: 500;
+           color:#ff2600;
+        }
+        .contact .content p{
+            font-weight: 300;
+            color: #ffffff;
+        }
+        
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container .contactInfo .shPageBox{
+                position: relative;
+                padding:20px 0;
+                display: flex;
+        }
+        .container .contactInfo .shPageBox .icon{
+            min-width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .container .contactInfo .shPageBox .icon:hover{
+            background-color:aqua;
+
+        }
+        .container .contactInfo .shPageBox .shPageText{
+            display: flex;
+            margin-left: 20px;
+            font-size:16px;
+            color: #ffffff;
+            flex-direction: column;
+            font-weight: 300;
+
+        }
+        .container .contactInfo .shPageBox .shPageText h3{
+            font-weight: 500;
+            font-size: 22px;
+            color:#00e1ff;
+        }
+        .contactForm{
+            width:40%;
+            padding:40px;
+            background-color:#ffffff;
+            border-radius: 70px;
+        }
+        .contactForm h2{
+            font-size:30px;
+            color:#333;
+            font-weight: 500;
+        }
+        .contactForm .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top:10px;
+        }
+        .contactForm .inputBox input, textarea{
+                width:100%;
+                padding:5px 0;
+                font-size: 16px;
+                margin:10px 0;
+                border-bottom: 2px solid #535353;
+                resize: none;
+        }
+        .contactForm .inputBox span{
+            position: absolute;
+            left:0;
+            padding:5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            
+        }
+        .contactForm .inputBox input[type="submit"]{
+            width: 100px;
+            background: #00bcd4;
+            color:#ffffff;
+            border-radius: 50px;
+            padding:15px;
+            font-size: 18px;
+        }
+        .contactForm .inputBox input[type="submit"]:hover{
+            background-color: rgb(4, 80, 179);
+            font-weight: bold;
+            transition: .5s;
+        }
+        @media (max-width: 991px)
+        {
+            .contact{
+                padding:50px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .container .contactInfo
+            {
+                margin-bottom: 40px;
+            }
+            .contact .contactInfo, .contactForm{
+               width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><span><a href="Index.html">SportsBlog<img src="./images/sport-icon2.svg" width="40px" height="40px"
+                            alt="Soccer Ball"></a></span></h1>
+
+            <div class="nav-links" id="navLinks">
+                <a><img src="./images/x-icon.ico" alt="" class="x-icon" onclick="hideMenu()"> </a>
+
+                <ul>
+                    <li><a href="Index.html">Home</a> </li>
+                    <li><a href="Articles.html">News</a> </li>
+                    <li><a href="Services.html" class="orange">Sign up</a> </li>
+                </ul>
+            </div>
+            <a><img src="./images/menu-icon.png" alt="" class="menu-icon" onclick="showMenu()"></a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat animi eligendi. Maxime autem delectus labore harum nihil eum in. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="container">
+                <div class=contactInfo>
+                    <div class="shPageBox">
+                        <div class="icon"><i class="fa fa-map-marker" ></i></div>
+                        <div class="shPageText">
+                            <h3>Address</h3>
+                            <p>Rr.Skenderbeu<br> Prishtine<br> 2354 </p>
+                        </div>
+                    </div>
+                     <div class="shPageBox">
+                        <div class="icon"><i class="fa fa-envelope-o" ></i></div>
+                        <div class="shPageText">
+                            <h3>Email</h3>
+                            <p>email@gmail.com<br> mail@outlook.com<br>userName@live.com</p>
+                        </div>
+                    </div>
+                    <div class="shPageBox">
+                        <div class="icon"><i class="fa fa-phone" ></i></div>
+                        <div class="shPageText">
+                            <h3>Phone</h3>
+                            <p>+383 65 754 322<br>+383 40 551 552</p>
+                        </div>
+                    </div>        
+                </div>
+                <div class ="contactForm">
+                    <form>
+                        <h2>Send Messages</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" placeholder="Full Name...">
+                            <!-- <span>Full Name</span> -->
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" placeholder="Your Email...">
+                            <!-- <span>Email</span> -->
+                        </div>
+                        <div class="inputBox">
+                            <textarea placeholder="Your Message..."></textarea>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h4 class="orange">About Us</h4>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, sapiente.
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, laborum.
+        </p>
+        <p id="footerTxt">All rights reserved &copy; 2021</p>
+        <div class="icons">
+            <a href=""> <i class="fab fa-facebook-square"></i></a>
+            <a href=""> <i class="fa fa-twitter"></i> </a>
+            <a href=""> <i class="fab fa-instagram"></i></a>
+            <a href=""> <i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript per phone menu -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

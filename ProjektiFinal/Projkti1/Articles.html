@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/cb7b66fe1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Scripta per thirrjen e klasave te ikonave-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <title>SportsBlog | News</title>
+
+    <!--Internal CSS style-->
+    <style>
+      header {
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url(./images/Articles-banner.jpg);
+        background-position:unset;
+        background-size: cover;
+        min-height: 50vh;
+        width: 100%;
+        position: relative;
+        color: white;
+      }
+      .main-content {
+        width: 90%;
+        margin: 30px auto 30px;
+      }
+      .content {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        padding-top: 50px;
+      }
+      .content a {
+        color: #000000;
+      }
+      .content h1 {
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        color: #15152b;
+      }
+      .post {
+        margin: 3% 0;
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        background: #eae2fa;
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        flex-direction: row;
+      }
+      .post img {
+        height: 300px;
+        width: 30%;
+      }
+      .post h2 {
+        font-size: 24px;
+        margin: 10px;
+        padding-bottom: 10px;
+      }
+      .post p,
+      .post i {
+        margin: 10px;
+      }
+      .post i{
+        margin-top: 100px;
+        padding-bottom: 10px;
+      }
+      .post p{
+        line-height: 30px;
+        color: #777;
+      }
+
+      /*Comment box */
+      .comment-box {
+        border: 1px solid #ccc;
+        margin: 50px 0;
+        padding: 10px;
+        padding-right: 40px;
+        background: white;
+      }
+      .comment-box h3 {
+        text-align: left;
+        padding: 0.5em 20px;
+      }
+      .comment-form input,
+      .comment-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 15px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background: #f0f0f0;
+      }
+      .comment-btn {
+        margin: 10px 15px;
+        padding-left: 20px;
+        border: 1px solid #15152b;
+        display: inline-block;
+        text-decoration: none;
+        color: #15152b;
+        padding: 10px 20px;
+        font-size: 1em;
+        background: transparent;
+        position: relative;
+        border-radius: 15px;
+      }
+      .comment-btn:hover {
+    border: 1px solid #15152b;
+    background: #15152b;
+    color: #fff;
+    transition: 0.5s;
+      }
+
+      @media (max-width: 700px) {
+        .comment-box {
+          text-align: center;
+          margin-top: 80px;
+        }
+       .post{
+        flex-direction: column;
+      }
+        .post img {
+        height: 300px;
+        width: 100%;
+      }
+      .post h2{
+        text-align: center;
+        padding-top: 10px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <h1>
+            <span
+              ><a href="Index.html"
+                >SportsBlog<img
+                  src="./images/sport-icon2.svg"
+                  width="40px"
+                  height="40px"
+                  alt="Soccer Ball" /></a
+            ></span>
+          </h1>
+
+          <div class="nav-links" id="navLinks">
+            <a
+              ><img
+                src="./images/x-icon.ico"
+                alt=""
+                class="x-icon"
+                onclick="hideMenu()"
+              />
+            </a>
+
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="Articles.html" class="orange">News</a></li>
+              <li><a href="Services.html">Sign up</a></li>
+            </ul>
+          </div>
+          <a
+            ><img
+              src="./images/menu-icon.png"
+              alt=""
+              class="menu-icon"
+              onclick="showMenu()"
+          /></a>
+        </nav><div class="text-box">
+          <h1>Latest news</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="content">
+          <div class="news-content" id="news">
+
+            <div class="post" id="post1">
+              <img src="./images/ArtickleP1.jpg" class="article-img" alt="" />
+              <div class="text-content">
+                <h2>Lionel Messi</h2>
+                <p class="preview-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magni omnis quam consectetur, dolorum voluptates earum non impedit eligendi repellendus voluptate dolor? Inventore neque, eum praesentium facere ullam animi fugiat vero ab nobis reiciendis magni, sint, repellendus sapiente? Nemo distinctio cumque accusamus consequuntur doloribus voluptatibus eveniet quidem. Sint, inventore beatae.</p>
+
+                <i class="far fa-user">Anonymous</i>
+                <i class="far calendar">Jul 7, 2021</i>
+              </div>
+            </div>
+            <div class="post" id="post2">
+              <div class="text-content">
+                <h2>Cristiano Ronaldo</h2>
+                <p class="preview-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magni omnis quam consectetur, dolorum voluptates earum non impedit eligendi repellendus voluptate dolor? Inventore neque, eum praesentium facere ullam animi fugiat vero ab nobis reiciendis magni, sint, repellendus sapiente? Nemo distinctio cumque accusamus consequuntur doloribus voluptatibus eveniet quidem. Sint, inventore beatae. </p>
+
+                <i class="far fa-user">Anonymous</i>
+                <i class="far calendar">Jul 7, 2021</i>
+              </div>
+              
+              <img src="./images/ArtickleP2.jpg" class="article-img" alt="" />
+            </div>
+            <div class="post" id="post3">
+              <img src="./images/ArtickleP3.jpg" class="article-img" alt="" />
+              <div class="text-content">
+                <h2>Kevin De Bruyne</h2>
+                <p class="preview-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magni omnis quam consectetur, dolorum voluptates earum non impedit eligendi repellendus voluptate dolor? Inventore neque, eum praesentium facere ullam animi fugiat vero ab nobis reiciendis magni, sint, repellendus sapiente? Nemo distinctio cumque accusamus consequuntur doloribus voluptatibus eveniet quidem. Sint, inventore beatae. </p>
+
+                <i class="far fa-user">Anonymous</i>
+                <i class="far calendar">Jul 7, 2021</i>
+              </div>
+            </div>
+            <div class="post" id="post4">
+              <div class="text-content">
+                <h2>Phoenix Suns</h2>
+                <p class="preview-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magni omnis quam consectetur, dolorum voluptates earum non impedit eligendi repellendus voluptate dolor? Inventore neque, eum praesentium facere ullam animi fugiat vero ab nobis reiciendis magni, sint, repellendus sapiente? Nemo distinctio cumque accusamus consequuntur doloribus voluptatibus eveniet quidem. Sint, inventore beatae.</p>
+
+                <i class="far fa-user">Anonymous</i>
+                <i class="far calendar">Jul 7, 2021</i>
+              </div>
+              <img src="./images/2Artickle1.jpg" class="article-img" alt="" />
+            </div>
+            <div class="post" id="post5">
+              <img src="./images/2Artickle2.jpg" class="article-img" alt="" />
+              <div class="text-content">
+                <h2>La Lakers</h2>
+                <p class="preview-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur magni omnis quam consectetur, dolorum voluptates earum non impedit eligendi repellendus voluptate dolor? Inventore neque, eum praesentium facere ullam animi fugiat vero ab nobis reiciendis magni, sint, repellendus sapiente? Nemo distinctio cumque accusamus consequuntur doloribus voluptatibus eveniet quidem. Sint, inventore beatae. </p>
+                <i class="far fa-user">Anonymous</i>
+                <i class="far calendar">Jul 7, 2021</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 style="color: white">blablabla</h6>
+
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <form class="comment-form">
+            <input type="text" placeholder="Enter Name" name="" id="" />
+            <input type="text" placeholder="Enter Email" name="" id="" />
+            <textarea rows="10" placeholder="Your comment..."></textarea>
+            <span class="submit-btn">
+              <button type="submit" class="comment-btn">POST COMMENT</button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h4 class="orange">About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo,
+        sapiente.
+        <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, laborum.
+      </p>
+      <p id="footerTxt">All rights reserved &copy; 2021</p>
+      <div class="icons">
+        <a href=""> <i class="fab fa-facebook-square"></i></a>
+        <a href=""> <i class="fa fa-twitter"></i> </a>
+        <a href=""> <i class="fab fa-instagram"></i></a>
+        <a href=""> <i class="fab fa-discord"></i></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript per phone menu -->
+    <script src="./script.js"></script>
+  </body>
+</html>
